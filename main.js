@@ -103,16 +103,9 @@ modalElement.addEventListener("click", (event) => {
   if (event.target.nodeName === "BUTTON") {
     backdropEl.classList.add("is-hidden");
   }
-
-  currentIndex = images.findIndex(
-  img => img.original === event.target.dataset.path;
-);
 });
 
-
 document.addEventListener("keydown", (event) => {
-  if (backdropEl.classList.contains("is-hidden")) return;
-
   if (event.key === "ArrowRight") {
     currentIndex = (currentIndex + 1) % images.length;
     imgElement.src = images[currentIndex].preview;
@@ -123,5 +116,3 @@ document.addEventListener("keydown", (event) => {
     imgElement.src = images[currentIndex].preview;
   }
 });
-
-
