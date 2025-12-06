@@ -99,8 +99,8 @@ listElement.addEventListener("click", (event) => {
   }
 });
 
-modalElement.addEventListener("click", (event) => {
-  if (event.target.nodeName === "BUTTON") {
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") {
     backdropEl.classList.add("is-hidden");
   }
 });
